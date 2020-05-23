@@ -1,0 +1,22 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>show heroes</title>
+</head>
+<body>
+  <h1><%= @team.name %></h1>
+  <h3>Team Motto: <%= @team.motto %></h3>
+
+  <% Hero.all.each do |instance| %>
+    <h3>Hero Name: <%= instance.name %></h3>
+    <p>Hero Power: <%= instance.power %></p>
+    <p>Hero Biography: <%= instance.bio %></p>
+  </br>
+  <% end %>
+
+
+</body>
+</html>
