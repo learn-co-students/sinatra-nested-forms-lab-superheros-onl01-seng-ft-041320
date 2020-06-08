@@ -1,6 +1,6 @@
 <html>
-<h1>Flatiron</h1>
-<h2>Team Motto: <%=@my_team.name %></h2>
+<h1><%=@my_team.name%></h1>
+<h2>Team Motto: <%=@my_team.motto %>!</h2>
 <% @team_heroes.each do |hero|%>
     <h2>Hero Name: <%= hero.name %></h2>
     <h4>Hero Power: <%= hero.power %></h4>
@@ -8,5 +8,4 @@
 <% end %>
 
 </html>
-
 

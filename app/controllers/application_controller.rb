@@ -13,7 +13,7 @@ class App < Sinatra::Base
             Hero.new(member)
         end
         @team_heroes = Hero.all
-        erb :team
         # binding.pry
+        erb :team
     end
 end
